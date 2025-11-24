@@ -19,7 +19,7 @@ df = df.set_index("result")
 st.write("---")
 st.table(df)
 st.write("---")
-st.write("Test results")
+st.write("Test suite runs")
 st.bar_chart(
     df,
     x_label="Status",
