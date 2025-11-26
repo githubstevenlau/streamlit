@@ -9,6 +9,7 @@ st.write("Results from the test runs are stored in Amazon DynamoDB and can be ac
 st.write("REST endpoint: https://rpqvcjmfyudiehdyx2ykgqzweu0oaxht.lambda-url.eu-west-2.on.aws/")
 st.write("GraphQL endpoint: https://6a5dhgnf5yzokyxy46uzz3sija0kwedl.lambda-url.eu-west-2.on.aws/graphql")
 st.write("Results can also be sent to Amazon SNS, Amazon SQS or an Apache Kafka instance etc.")
+st.write("The following tabulation and graph uses data from the REST endpoint.")
 
 res = requests.get("https://rpqvcjmfyudiehdyx2ykgqzweu0oaxht.lambda-url.eu-west-2.on.aws/")
 
