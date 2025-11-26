@@ -4,10 +4,11 @@ import requests
 import streamlit as st
 
 
-st.title("Catapult")
-st.write("Results from tests runs")
+st.title("Test results")
+st.write("Results from the test runs are stored in Amazon DynamoDB and can be accessed using the following endpoints:")
 st.write("REST endpoint: https://rpqvcjmfyudiehdyx2ykgqzweu0oaxht.lambda-url.eu-west-2.on.aws/")
 st.write("GraphQL endpoint: https://6a5dhgnf5yzokyxy46uzz3sija0kwedl.lambda-url.eu-west-2.on.aws/graphql")
+st.write("Results can also be sent to Amazon SNS, Amazon SQS or an Apache Kafka instance etc.")
 
 res = requests.get("https://rpqvcjmfyudiehdyx2ykgqzweu0oaxht.lambda-url.eu-west-2.on.aws/")
 
