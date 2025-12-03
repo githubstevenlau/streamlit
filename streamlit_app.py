@@ -4,6 +4,9 @@ import requests
 import streamlit as st
 
 
+st.set_page_config(
+    page_title="Steven Lau - API test results"
+)
 st.title("Test results")
 st.write("Results from the test runs are stored in Amazon DynamoDB and can be accessed using the following endpoints:")
 st.write("REST endpoint: https://rpqvcjmfyudiehdyx2ykgqzweu0oaxht.lambda-url.eu-west-2.on.aws/")
